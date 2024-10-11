@@ -297,23 +297,7 @@ margin-bottom: 90px;
     padding-bottom: 30px;
 }
 
-.hidden{
-    display: none;
-}
 
-.visible{
-    display: block;
-}
-
-
-.arrow{
-    transition: transform 0.3s ease;
-    font-size: 24px; 
-    background: #ffffff;
-    text-align: right;
-    /* border: none;
-    cursor: pointer; */
-}
 
 .photo{
     padding: 70px;
@@ -373,20 +357,106 @@ textarea {
     resize: vertical;
 }
 
+main div div h4{
+    text-align:end;
+    color:crimson;
+    font-family:'Impact';
+    font-size: 24px;
+
+ }
+
+ article {
+padding: 30px; /* Increased padding */
+border-radius: 8px; /* Rounded corners for a softer look */
+}
+
+.course-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjusted min width */
+gap: 30px; /* Increased gap for better spacing */
+margin: 20px; /* Increased margin */
+}
+
+.course-card {
+border: 1px solid #ffffff;
+border-radius: 8px; /* Rounded corners */
+padding: 15px; /* Increased padding */
+background: linear-gradient(to bottom, #ffffff, #ffffff);
+text-align: start;
+}
+
+        .arrow {
+            transition: transform 0.3s ease;
+            font-size: 24px;
+            border: none;
+            text-align: right;
+            cursor: pointer;
+            background: #ffffff;
+            width: 26px;
+            height: 24px;
+            padding-left: 80%;
+        }
+
+        .hidden {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+            font-size: 14;
+        }
+
+        .visible {
+            padding-top: 5px;
+            max-height: 500px; /* Adjust as per content size */
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+            opacity: 1;
+            font-size: 14px;
+        }
+
+.arrow_button:hover {
+    opacity: 0.9;
+}
+
+/* .button_text {
+    flex-grow: 1;
+    text-align: center;
+} */
+
+.fa-arrow-right {
+    transition: transform 0.3s ease;
+    font-size: 24px;
+}
+
+
+
+/* .arrow{
+    display: flex;
+    align-content: right;
+} */
+
+
+
+
+
 button {
     width: 100%;
     padding: 12px; /* Increased button padding */
-    background: linear-gradient(to right, #b8b2ad, #b8b2ad);
+    background: linear-gradient(to right, #ffffff, #fffcf9);
     border: none;
     border-radius: 4px;
     color: rgb(0, 0, 0);
     font-size: 18px; /* Increased font size */
     cursor: pointer;
+    /* display: flex;
+    align-content: right; */
 }
 
 button:hover {
     opacity: 0.9;
 }
+
+
+
 
 @media screen and (max-width: 768px) {
     nav ul li {
